@@ -4,6 +4,8 @@ import { UserModule } from "./user/user.module";
 import { AuthModule } from "./auth/auth.module";
 import { ConfigModule } from "@nestjs/config";
 import { BatchModule } from './batch/batch.module';
+import { WeatherModule } from './weather/weather.module';
+import { AiModule } from './ai/ai.module';
 
 @Module({
   controllers: [],
@@ -26,6 +28,8 @@ import { BatchModule } from './batch/batch.module';
     UserModule,
     AuthModule,
     BatchModule,
+    WeatherModule,
+    AiModule,
   ],
 })
 export class AppModule {}
